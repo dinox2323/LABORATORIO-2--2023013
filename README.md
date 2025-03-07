@@ -62,10 +62,7 @@ JWT_SECRET=<tu_secreto_jwt>
   - **URL:** `/adoptionSystem/v1/user/updateProfilePicture/:uid`
   - **Método:** `Patch`
  - **Cuerpo:**
-    ```json
-    {
-      "ProfilePicture": "field"
-    }
+   
     ```
     
 - **Actualizar Contraseña del Usuario**
@@ -142,16 +139,16 @@ JWT_SECRET=<tu_secreto_jwt>
     }
     ```
        - **Cancelar Cita**
-  - **URL:** `/adoptionSystem/v1/appointment/cancelAppointment/
+  - **URL:** `/adoptionSystem/v1/appointment/deleteAppointment/:id
   - **Método:** `DELETE`
-  - **Cuerpo:**
-    ```json
-    {
-      "date": "2023-10-15T10:00:00Z",
-      "pet": "string",
-      "user": "string"
-    }
-    ```
+
+   - **LISTAR Cita**
+  - **URL:** `/adoptionSystem/v1/appointment/userAppointments/:userId
+  - **Método:** `GET`
+
+
+  
+  
     
 
 ## Funcionalidades Adicionales
